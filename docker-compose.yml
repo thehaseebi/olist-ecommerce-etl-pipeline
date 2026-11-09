@@ -1,0 +1,15 @@
+services:
+    postgres:
+        image: postgres:16
+        container_name: ecommerce_pg
+        environment:
+            POSTGRES_USER: ecom_pg_admin
+            POSTGRES_PASSWORD: ecom_pg_admin
+            POSTGRES_DB: ecommerce
+        ports:
+            - "5432:5432"
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+
+volumes:
+    pgdata:
