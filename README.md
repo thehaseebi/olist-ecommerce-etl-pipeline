@@ -88,12 +88,9 @@ From delivered orders (`sql/analytics.sql`), revenue in BRL:
 
 | Question | Answer |
 |---|---|
-| Delivered orders / revenue | **96,478** orders, **R$ 15.4M** |
-| Average order value | **R$ 159.83** |
 | Peak month | **Nov 2017**: R$ 1.15M, **+53.6%** month-over-month (Black Friday) |
 | Top category | **health_beauty**: R$ 1.41M, followed by watches_gifts and bed_bath_table |
-| Top state | **São Paulo (SP)**: 37.4% of revenue |
-| Repeat-customer rate | only **3.05%** of 95,420 customers ordered more than once, so retention is a clear growth opportunity |
+| Repeat-customer rate | only **3.05%** of customers ordered more than once, so retention is a clear growth opportunity |
 
 > **Data gotcha:** Olist issues a new `customer_id` for every order. Counting repeat buyers on `customer_id` gives ~0%; the real person is `customer_unique_id`, which is why both are kept in `dim_customer`.
 
